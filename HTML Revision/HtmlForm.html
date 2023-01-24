@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Html Form</title>
+</head>
+
+<body>
+    <form>
+        <label for="username"> UserName: </label>
+        <input type="text" id="username" /> <br /> <br />
+
+        <label for="about"> About </label>
+        <textarea id="about"></textarea> <br /> <br />
+
+        <label for="country"> Country </label>
+        <select id="country">
+            <option value="india"> India </option>
+            <option value="australia"> Australia </option>
+            <option value="newzealand"> NewZealand </option>
+            <option value="westindies"> WestIndies </option>
+        </select> <br /> <br />
+
+        <label> Job Type </label> <br />
+        <input type="radio" name="jobtype" value="parttime" id="parttime" />
+        <label for="parttime"> Part Time </label>
+        <br>
+        <input type="radio" name="jobtype" value="fulltime" id="fulltime" />
+        <label for="fulltime"> Full Time </label>
+        <br /> <br />
+
+        <label> Job Type </label> <br />
+        <input type="checkbox" name="jobtypecb" value="parttime" id="parttimecb" />
+        <label for="parttimecb"> Part Time </label>
+        <br>
+        <input type="checkbox" name="jobtypecb" value="fulltime" id="fulltimecb" />
+        <label for="fulltimecb"> Full Time </label>
+        <br /> <br />
+
+        <button type="submit"> Submit </button>
+    </form>
+</body>
+
+</html>

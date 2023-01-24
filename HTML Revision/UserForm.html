@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Different types of ATTRIBUTES and INPUTS in a user form
+     ATTRIBUTES = type = "text", name = "FirstName", value = "male" 
+     INPUTS = text, pasword,radio,checkbox,file,
+     FOR BUTTONS = type = "submit" , type = "reset" type = "image"-->
+
+<head>
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <form action="" class="form-group">
+        <div class="form-group">
+            <h1>This is A Payment Form</h1>
+            <p style="color: rgb(127, 129, 255);">Required fields are marked by *</p>
+            <h2 style="color: red;">Personal Information</h2>
+            <hr>
+            <p>NAME:* <input type="text" name="name" autofocus required placeholder="Enter your name"></p>
+            <fieldset>
+                <legend>
+                    GENDER:*
+                </legend>
+                <p>Male: <input type="radio" name="gender" , id="gender" required></p>
+                <p>Female: <input type="radio" name="gender" id="gender" required></p>
+            </fieldset>
+            <p>ADDRESS: <textarea name="address" id="address" cols="20" rows="5"
+                    title="Enter min 10 characters"></textarea></p>
+            <p>EMAIL-ID:* <input type="email" name="email" id="email" required placeholder="Enter your mail-id"></p>
+            <p>PHONE NUMBER: <input type="number" name="phone_number" id="phone_number"></p>
+            <p>PINCODE: <input type="number" name="pincode" id="pincode"></p>
+            <hr>
+
+            <h1 style="color: red;">Payment Information</h1>
+            <hr>
+            <p>CARD TYPE:*
+                <select name="card_type" id="card_type" required placeholder="select your card type">
+                    <option value="">-- Select a card type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="hdfc card">HdfcCard</option>
+                </select>
+            </p>
+            <p>CARD NUMBER:* <input type="number" name="card_number" id="card_number" required
+                    placeholder="Enter your card number"></p>
+            <p>EXPIRY DATE:* <input type="date" name="exp_date" id="exp_date" required></p>
+            <p>CVV:* <input type="password" name="cvv" id="cvv" required placeholder="Enter your CVV"></p>
+            <button type="submit">Submit</button>
+            <input type="submit" value="Pay Now">
+        </div>
+    </form>
+
+
+</body>
+
+</html>

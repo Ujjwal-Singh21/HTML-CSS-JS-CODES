@@ -1,0 +1,72 @@
+.box-model {
+    border: 1px solid red;
+    height: 50px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.inheritence {
+    color: orange;
+    font-family: 'Segoe UI';
+    font-size: 30px;
+}
+
+/* Css design for table  */
+
+th,
+td {
+    /* border: 1px solid rgb(236, 7, 129); */
+    border-bottom: 1px solid rgb(236, 7, 129);
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td {
+    text-align: center;
+    /* height: 50px;
+    vertical-align: bottom; */
+}
+
+/* display */
+
+.content-1 {
+     border: 1px solid red;
+     display: inline;
+}
+
+.content-2 {
+    border: 1px solid blue;
+    display: block;
+    /* display: none; */
+}
+
+/* position */
+
+.position-1 {
+    border: 1px solid red;
+    /* position: static; */
+    /* position: relative; */
+    position: sticky;
+    top: 50px;
+    left: 50px;
+}
+
+.position-2 {
+    border: 1px solid blue;
+    /* position: fixed; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 1000px;
+    border: 1px solid black;
+}

@@ -1,0 +1,41 @@
+/* practicing id selector */
+
+#heading-1 {
+    background-color: black;
+    color: deeppink;
+    /* normally h1 tag is block level element, so making it inline level element */
+    display: inline;
+}
+
+#paragraph-1 {
+    background-color: antiquewhite;
+    color: deepskyblue;
+    font-weight: 600;
+    /* giving some space between content and border using padding  */
+    padding: 10px;
+}
+
+
+/* practicing attribute selector */
+/* selecting all classes without a particular class name */
+
+li[class] {
+    color: orangered;
+    font-size: xx-large;
+}
+
+
+/* selecting a particular class */
+
+li[class="a"] {
+    background-color: black;
+    color: yellow;
+}
+
+
+/* selecting class with just starting letter using approx symbol  */
+
+li[class~="b"] {
+    font-style: italic;
+    color: blue;
+}

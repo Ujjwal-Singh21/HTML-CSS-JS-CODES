@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Html Practice demo -1</title>
+</head>
+
+<body>
+
+    <!--Using an anchor tag to go to google-->
+    <!--ABSOLUTE URLS-->
+
+    <!--it loads google on same page-->
+    <a href="https://www.google.com" style="color: red;">
+        <h1>Google</h1>
+    </a>
+
+    <!--to load google on another use attribute target and give value as blank page-->
+    <a href="https://www.google.com" style="color: blue;" target="_blank">
+        <h1>Google</h1>
+    </a>
+
+    <!--to go to our own page named as MyPage and come back from there-->
+    <a href="Mypage.html" style="color: rgb(255, 127, 223);" target="_blank">
+        <h1>Go to My Own Page</h1>
+    </a>
+
+    <!--REALTIVE URLS-->
+    <!--GOING TO OUR PDF AVAILABLE IN A FOLDER CALLED PDFS-->
+    <a href="pdfs/Wifi Guide.pdf" target="_blank">
+        <h1>MY WIFI GUIDE</h1>
+    </a>
+    <a href="pdfs/Group IT Presentation.pdf" target="_blank" style="color: rgb(0, 162, 255);">
+        <h2>GROUP IT PRESENTATION </h2>
+    </a>
+
+    <!--IMAGE AND VIDEO TAGS-->
+    <img src="images/tony-stark-iron-man.jpg" alt="Iron man image" width="400">
+    <hr>
+    <img src="images/Nature.jpg" alt="Nature image" width="500">
+    <hr>
+
+    <!--if image not found or wrong image url entered-->
+    <img src="images/abc.jpg" alt="Sorry image not found">
+    <hr>
+
+    <!--  a) autoplay attribute - means video will satrt playing automatically,
+          b) contrils attribute - will provide a play/pause/forward/backward controls.
+          c) loop attribute - loops the video again and again
+          d) muted attribute - starts video with sound muted
+          e) poster attribute - to keep a thumbnail for a video -->
+    <video src="videos/Coca-Cola 20 Commercial .mp4" width="300"> </video>
+    <hr>
+    <video src="videos/Coca-Cola 20 Commercial .mp4" width="300" autoplay> </video>
+    <hr>
+    <video src="Videos/Football in Ultra HD.mp4" width="500" controls loop muted poster="images/football_player.jpg">
+    </video>
+    <hr>
+
+    <!-- <iframe> tag use to embed an video to embed and play on our page -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w01V5FI03MQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <hr>
+
+    <iframe src="Mypage.html" frameborder="0" width="400"></iframe>
+    <hr>
+
+
+
+
+
+</body>
+
+</html>

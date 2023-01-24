@@ -1,0 +1,62 @@
+/* CLASS SELECTOR DEMO */
+
+
+/* changing first item style of our unodered list  */
+
+.item-one {
+    color: orange;
+    font-style: bold;
+    font-weight: bolder;
+}
+
+
+/* designing a particular "em" tag using its class name ".em-style"  */
+
+em.em-style {
+    color: aqua;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* desining our unordered list 3rd & 4th item using descendent combinator selector */
+/* here we write parent tag <space> child tag and write properties */
+
+li em {
+    color: red;
+}
+
+
+/* using adjacent selector 
+ h1 tag ke pass me jo paragraph tag hai uska font badha do, leking agar 2 adjacent 
+ tags ke beech me koi aur dusra tag likh denge tho fir ye selector kaam nai kar payega */
+
+h1+p {
+    font-size: 200%;
+}
+
+/* h1 tag ke pass me jo paragraph ke bad, ek aur 2nd paragraph tag hai uska font badha do */
+h1+p+p {
+    font-size: 400%;
+    color: orangered;
+}
+
+
+/* using pseudo class selector famous for anchor tags , 
+   here we are using hover state , hence color will change
+   when we will hover */
+
+ a:hover {
+    color: deeppink;
+    text-decoration: none; 
+    /* it means anchor tag ka underline wala line hat jayega whenever u hover  */
+} 
+
+
+/* body tag ke andar h1 tag ke bagal wale p tag ke andar specialclass wale 
+   span tag ka design  */
+
+ body h1+p .span-style {
+    color: fuchsia;
+    background-color: black;
+    padding: 20px;
+} 

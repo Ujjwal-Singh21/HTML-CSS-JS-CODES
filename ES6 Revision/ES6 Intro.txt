@@ -1,0 +1,51 @@
+Introduction to ES6 :-
+========================
+
+1) JavaScript is a superset of ECMAScript scripting language(ES6).
+
+2) ECMAScript forms the language base for JavaScript, JScript and ActionScript.
+
+3) ES6 gives a vast makeover to JavaScript by adding new syntaxes and APIs to write complex applications and libraries that are easier to debug and maintain.
+
+Why ECMAScript 6 ?
+==================
+
+1) JavaScript is extremely powerful and flexible, but it is often criticized for having unnecessary redundancy.
+
+2) JavaScript developers often use abstractions such as CoffeeScript and Typescript, which provide easier
+syntax, powerful features, and compile to JavaScript.
+
+3) ES6 was introduced to improve JavaScript and ensure that developers no longer needed  to use abstractions or other techniques to write quality code, which leads to a lengthy process.
+
+History and More Information of ES6 :-
+========================================
+1) ECMAScript is a scripting language standardized by Ecma International in the ECMA-262 specification and ISO/IEC 16262. Scripting languages such as JavaScript, JScript and ActionScript are supersets of ECMAScript. 
+
+Although JavaScript, JScript, and ActionScript have more capabilities than ECMAScript, by defining more objects and methods, the core features of these languages are the same as ECMAScript.
+
+2) ECMAScript 6 is the sixth version and the seventh edition of the ECMAScript language. In short, it is also called "ES6".
+
+3) JavaScript was lacking behind some other programming languages when compared to various syntactic forms such as :-
+
+   a) declaring constant variables, 
+   b) declaring block scoped variables,
+   c) extracting data from arrays, 
+   d) shorter syntax for declaring functions and so on. 
+
+   ES6 adds up a lot of new syntax-based features to JavaScript, which helps the developers to write less and do more. 
+
+   ES6 also prevents programmers from using various hacks for achieving various goals, which have negative performance impact and made code harder to read. 
+
+Summary :-
+=============
+1) ECMAScript 2015 is the sixth version and the seventh edition of the ECMAScript language. In short, it is also called "ES6".
+
+2) ES6 adds up a lot of new syntax-based features to JavaScript, which helps the developers to write less and do more.
+
+3) Google Chrome and Opera supports most of the ES6 features.
+
+4) In the production environment, It is recommended to use node compiler like babel, traceur and TypeScript to compile and embed the compiled JS.
+
+
+
+

@@ -1,0 +1,107 @@
+Asynchronous JavaScript
+=======================
+
+Async JavaScript - What and Why?
+--------------------------------
+ In its most basic form, JavaScript is synchronous, blocking and Single Threaded.
+
+1) SYNCHRONOUS: If we have 2 functions which logs messages to the console, code executes Top-Down, with only one line executing at a given time.
+
+2) BLOCKING: 
+-> No matter how long a previous process takes, the subsequent process wont kick off untill the  former is completed.
+
+-> If function A have to execute an intensive chunck of code, JS have to finish that without moving on
+to function B, even if that code takes 10 seconds or 1 minute.
+
+-> Web apps runs in a browser and executes and intensive chunk of code without returning control to the 
+browser, the browser can appear to be frozen.
+
+ex:
+
+      function A {
+         console.log('Function A')
+       }
+
+     function B {
+        console.log('Function B')
+      }
+
+      A()
+      B()
+
+    /* Logs Function A and the Logs Function B */
+
+3) SINGLE-THREADED: -> A thread is simply a process that your JS program can use to run a Task.
+                    -> Each thread can do only one task at a time.
+                    -> JS has just one thread called as 'Main Thread' for executing any code.
+
+Async JavaScript - How?
+-----------------------
+
+-> Just JS is not enough.
+-> We need new pieces that are outside of JS to help us write asynchronous code, and this is where web browsers come into the play.
+
+-> Web browsers define functions and APIs that allow us to register functions that should not be executed 
+synchronousaly, and should be invoked asynchronousaly when some kind of even occurs.
+
+-> For example, that could be the passage of time (setTimeout() or setInterval()), the user's interaction with the mouse (addEventListener), or the arrival of data over the network(callbacks, Promises, async-await).
+
+-> You can let your code do several things at the same time without stopping or blocking your main thread.
+
+
+Timeout & Intervals
+-------------------
+
+The traditionals methods JS has available for running code asynchronousaly,
+
+-> after a set time period elapsed (setTimeout)
+-> at regular intervals of time (setInterval)
+
+Noteworthy points:
+------------------
+ 1) Timers and Intervals are not the part of JS itself, they are basically implemented by the browser and setTimeout and setInterval are basically names given to that functionality in JavaScript.
+
+ 2) Duration parameter is the minimum delay and not the guranteed delay.
+
+ 3) It is possible to achieve the same effect as setInterval with a recursive setTimeout.
+
+ setInterval()
+ -------------
+
+ setInterval(function run() {
+   console.log('Hello')
+ }, 100)
+
+setTimeout() (recursive)
+------------------------
+
+setTimeout(function run() {
+   console.log('Hello')
+   setTimeout(run, 100)
+}, 100)
+
+
+Differences in both approaches
+------------------------------
+
+recursive setTimeout approach: 
+------------------------------
+ -> Duration is guranteed between executions, irrespective of how long the code takes to run, the interval will remain the same.
+
+ -> If the code takes longer to run than the time interval itself, then we should go for this approach.
+
+ -> You can calculate a different delay before running each iteration.
+
+ setInterval approach:
+ ---------------------
+
+ -> The Duration interval includes the time taken to execute the code you want to run, for eg,
+
+ -> The code takes 40ms to run, the interval is 60 ms, The code takes 50 ms to run, the interval is 50 ms.
+
+ -> setInterval is always a fixed interval duration.
+
+
+
+
+
