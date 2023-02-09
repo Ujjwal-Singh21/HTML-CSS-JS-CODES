@@ -1,10 +1,14 @@
+
+
+
+
 // const arr = [2, 4, 6, 8, 10]
 
 // const res = arr.reduce((accum, val) => accum + val, 5)
 
 // console.log(res)
 
-//---------------------------------------------------------------
+//-------------------------------------------------------------------------------------------
 
 // var name = 'Victor'
 
@@ -29,28 +33,27 @@
 
 //----------------------------------------------------------------------------------
 
-const obj1 = {
-  name: 'Ajay',
-  fun () {
-    return () => {
-      console.log(this)
-      console.log(this.name)
-    }
-  }
-}
+// const obj1 = {
+//   name: 'Ajay',
+//   fun () {
+//     return () => {
+//       console.log(this)
+//       console.log(this.name)
+//     }
+//   }
+// }
 
-obj1.fun()()
+// obj1.fun()()
 
-const obj2 = {
-  name: 'Akshay'
-}
+// const obj2 = {
+//   name: 'Akshay'
+// }
 
-obj1.fun.call(obj2)
+// obj1.fun.call(obj2)
 
 //---------------------------------------------------------------------------------------
 
 // const myObj = {
-
 //   showArgs1() {
 //     console.log(arguments)
 //   },

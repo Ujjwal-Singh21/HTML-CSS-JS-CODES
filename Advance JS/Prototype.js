@@ -15,7 +15,6 @@ const employee2 = new Employee('Clarke', 'Kent'); // { firstName: Clarke, lastNa
 
 //now adding new function that is available only to employee1 instance,
 employee1.introFunction = function () {
-
   console.log('Hi I am employee1');
 }
 
@@ -24,7 +23,6 @@ employee1.introFunction();
 
 // Hence using prototype object, we are adding a common shareable function to Employee function which will be available to each and every instances of Employee constructor function,
 Employee.prototype.sayName = function() {
-
   return this.firstName +' '+ this.lastName;
 }
 

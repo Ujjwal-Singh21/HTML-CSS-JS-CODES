@@ -24,10 +24,10 @@
 
 // 2.1) Issues while using var -> o/p is 6,6,6,6,6
 // This is because every setTimeout() callback fns are referring to same i which has same m/y location.
-// So once the loop ends with i value being 6, then all callbacks are executed one by one,
+// So once the loop ends with i value being 6 till for loop condition becomes false, then all callbacks are executed one by one,
 // Since last i value was 6, they find 6 being stored inside the variable i,
 // Therefore 6 is being printed by every callBack fn at the end.
-//------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 
 // function X () {
 
@@ -42,7 +42,7 @@
 
 // X()
 
-//-----------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
 
 // 2.2) Issue Solved while using let keyword -> o/p is 1, 2, 3, 4, 5
 // This is because every setTimeout() callback is referring to a new copy of i.
@@ -71,6 +71,7 @@
 // function Outer () {
 
 //   for (var i = 1; i <= 5; i++) {
+  
 //     function inner(arg) {
 //       setTimeout(function () {
 //         console.log(arg)

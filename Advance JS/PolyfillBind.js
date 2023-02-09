@@ -1,4 +1,4 @@
-// Normal approach using bind() method which returns a same copy of actual fn which can be called later
+// Normal approach using bind() method which returns a same copy of actual function which can be called later
 const person = {
   firstname: 'Bruce',
   lastname: 'Wayne'
@@ -16,7 +16,7 @@ returnedFn('America')
 
 Function.prototype.mybind = function (...args) {
   
-  // showName fn is present here and pointed by 'this' keyword, hence storing it in an variable
+  // showName fn is present here and pointed by 'this' keyword, hence storing it in an variable with same name
   let showNameFn = this
 
   params = args.slice(1) // cuts everything from index no 1 and returns as a new array

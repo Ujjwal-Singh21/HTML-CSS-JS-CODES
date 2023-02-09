@@ -1,7 +1,7 @@
 /* CLASS SELECTOR DEMO */
 
 
-/* changing first item style of our unodered list  */
+/* changing first item style of our UnOrdered list  */
 
 .item-one {
     color: orange;
@@ -14,7 +14,7 @@
 
 em.em-style {
     color: aqua;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia;
 }
 
 
@@ -27,23 +27,22 @@ li em {
 
 
 /* using adjacent selector 
- h1 tag ke pass me jo paragraph tag hai uska font badha do, leking agar 2 adjacent 
- tags ke beech me koi aur dusra tag likh denge tho fir ye selector kaam nai kar payega */
+ h1 tag ke pass me jo paragraph tag hai uska font badha do,
+ leking agar 2 adjacent tags ke beech me koi aur dusra tag likh denge tho fir ye selector kaam nai kar payega */
 
 h1+p {
     font-size: 200%;
 }
 
-/* h1 tag ke pass me jo paragraph ke bad, ek aur 2nd paragraph tag hai uska font badha do */
+/* h1 tag ke pass me jo paragraph tag hai, uske bad jo ek aur 2nd paragraph tag hai uska font badha do */
 h1+p+p {
     font-size: 400%;
-    color: orangered;
+    color: blue;
 }
 
 
-/* using pseudo class selector famous for anchor tags , 
-   here we are using hover state , hence color will change
-   when we will hover */
+/* using pseudo class selector famous for anchor tags, 
+   here we are using hover state , hence color will change when we will hover */
 
  a:hover {
     color: deeppink;
@@ -52,8 +51,7 @@ h1+p+p {
 } 
 
 
-/* body tag ke andar h1 tag ke bagal wale p tag ke andar specialclass wale 
-   span tag ka design  */
+/* body tag parent hai, uske andar h1 tag child tag hai,  uske adjacent wale p tag ke andar span-style wale span tag ka design  */
 
  body h1+p .span-style {
     color: fuchsia;

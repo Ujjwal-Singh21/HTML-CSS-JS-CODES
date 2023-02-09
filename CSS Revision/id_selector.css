@@ -11,29 +11,30 @@
     background-color: antiquewhite;
     color: deepskyblue;
     font-weight: 600;
-    /* giving some space between content and border using padding  */
-    padding: 10px;
+    /* giving some space between content and border using padding */
+    padding: 20px;
 }
 
 
 /* practicing attribute selector */
-/* selecting all classes without a particular class name */
+/* selecting all classes inside <li> tag without a particular class name */
 
 li[class] {
     color: orangered;
     font-size: xx-large;
+    list-style-type: circle;
 }
 
 
 /* selecting a particular class */
 
 li[class="a"] {
-    background-color: black;
     color: yellow;
+    background-color: black;
 }
 
 
-/* selecting class with just starting letter using approx symbol  */
+/* selecting class which is just starting with letter b using approx symbol (~)  */
 
 li[class~="b"] {
     font-style: italic;

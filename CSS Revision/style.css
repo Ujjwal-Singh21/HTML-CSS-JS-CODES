@@ -16,17 +16,14 @@ a {
 }
 
 
-/* if we want to give same color for both upper tags, 
-then we can use combined selectors */
+/* if we want to give same color for both upper tags, then we can use combined selectors */
 
-p,
-a {
+p, a {
     color: rgb(0, 255, 13);
 }
 
 
-/* the default list style type is "disc" for our unordered list we 
-   can change it using selector */
+/* the default list style type is "disc" for our unordered list, we can change it using selector */
 /* removing bulleted points of list and making it flat  */
 
 li {

@@ -20,7 +20,7 @@ const personObj = {
 personObj.sayName(); // here 'this' is referring to personObj.
 
 
-//-----------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
 
 // 2) Explicit Binding:
 //=====================
@@ -41,7 +41,7 @@ function displayName() {
 
 displayName.call(person); // now 'this' will refer to person object now
 
-//------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
 
 // 3) New Binding: (Constructor function)
 //=======================================
@@ -51,7 +51,6 @@ displayName.call(person); // now 'this' will refer to person object now
 // -> We can add some properties to that empty object using the same 'this' keyword which is pointing to it.
 
 function Person (name, city) {
-
   // internally this -> {}
   this.name = name;
   this.city = city;
@@ -63,7 +62,7 @@ const person2 = new Person('Raju', 'Lucknow'); // this -> { name: 'Raju', city: 
 console.log('Person1: ' + person1.name + ' City: ' + person1.city);
 console.log('Person2: ' + person2.name + ' City: ' + person2.city);
 
-//------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 // 4) Default Binding: (fallback binding if none of the above 3 rules are matched or mentioned)
 //=============================================================================================
@@ -83,4 +82,4 @@ function displayCountry() {
 
 displayCountry(); // undefined
 
-//-------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
