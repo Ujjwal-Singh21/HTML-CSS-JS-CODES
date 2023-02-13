@@ -6,7 +6,6 @@ function greet(name) {
 }
 
 function HigherOrderFunction(callbackFn) {
-
   const name = 'Vishwas'
   callbackFn(name)
 }
